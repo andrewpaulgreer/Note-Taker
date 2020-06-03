@@ -20,6 +20,8 @@ npm i
 
 ## Usage
 
+Deployed Link: https://secure-badlands-07383.herokuapp.com/
+
 YouTube Demonstration Link: https://youtu.be/OqgpEm7H0io
 
 Server Code
