@@ -61,7 +61,7 @@ app.post("/api/notes", function(req, res) {
 });
 
 // setting delete, with id placeholder
-app.delete("/api/notes/:id", function (req, res){
+app.delete("/api/notes/:id", function(req, res){
   let parsedId = req.params.id;
   let newId = 0;
   //using filter method to add to seeDb if the id's do not match a previousely placed.
@@ -71,7 +71,6 @@ app.delete("/api/notes/:id", function (req, res){
     newly.id = newId.toString();
     newId ++;
   }
-  //adding the new note to the Db
   writeNewNote(seeDb);
   res.json(seeDb);
 });
